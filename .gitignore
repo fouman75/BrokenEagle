@@ -60,3 +60,8 @@ crashlytics-build.properties
 
 Rexard.meta
 Assets/Images/Rexard
+Plugins.meta
+Assets/Plugins
+ThirdParty.meta
+Assets/ThirdParty/Feel
+Feel.meta
