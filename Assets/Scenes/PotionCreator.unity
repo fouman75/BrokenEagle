@@ -1603,7 +1603,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   potionContainer: {fileID: 1633422928}
-  potionCamera: {fileID: 963194227}
+  maxRotationX: 45
+  maxRotationZ: 45
 --- !u!222 &1242440241
 CanvasRenderer:
   m_ObjectHideFlags: 0

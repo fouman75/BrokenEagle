@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class PotionDragHandler : MonoBehaviour, IDragHandler
+public class PotionRotationHandler : MonoBehaviour, IDragHandler
 {
     [SerializeField] private Transform potionContainer;
     [SerializeField] private float maxRotationX = 45f;
@@ -12,7 +12,12 @@ public class PotionDragHandler : MonoBehaviour, IDragHandler
 
     public void OnDrag(PointerEventData eventData)
     {
-        var drag = eventData.delta;
+        RotatePotion(eventData.delta);
+    }
+
+    private void RotatePotion(Vector2 delta)
+    {
+        var drag = delta;
 
         _angleX = Mathf.Clamp(_angleX + drag.y, -maxRotationX, maxRotationX);
         _angleZ = Mathf.Clamp(_angleZ - drag.x, -maxRotationZ, maxRotationZ);
