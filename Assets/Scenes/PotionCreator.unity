@@ -1561,6 +1561,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1242440239}
   - component: {fileID: 1242440241}
+  - component: {fileID: 1242440240}
   m_Layer: 5
   m_Name: PotionViewer
   m_TagString: Untagged
@@ -1589,6 +1590,20 @@ RectTransform:
   m_AnchoredPosition: {x: 1230, y: -250}
   m_SizeDelta: {x: 650, y: 780}
   m_Pivot: {x: 0, y: 1}
+--- !u!114 &1242440240
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1242440238}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ca43b07e4590416eb131d6eda6006ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  potionContainer: {fileID: 1633422928}
+  potionCamera: {fileID: 963194227}
 --- !u!222 &1242440241
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1954,7 +1969,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1633422928}
   m_Layer: 0
-  m_Name: PotionSpawnPoint
+  m_Name: PotionContainer
   m_TagString: Untagged
   m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -1970,9 +1985,10 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -10, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 543450653498905278}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1667779012
 GameObject:
@@ -2265,6 +2281,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4299952606933750, guid: 968c924d2be019d4b9e67647551eec3e, type: 3}
   m_PrefabInstance: {fileID: 1760601168}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &543450653498905278 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1475858915739514588, guid: 72641fc5610af4b3fb27972d73d9954e, type: 3}
+  m_PrefabInstance: {fileID: 1437198725112833122}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &873102480859545249
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2367,15 +2388,15 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 1633422928}
     m_Modifications:
     - target: {fileID: 1475858915739514588, guid: 72641fc5610af4b3fb27972d73d9954e, type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1475858915739514588, guid: 72641fc5610af4b3fb27972d73d9954e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -10
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1475858915739514588, guid: 72641fc5610af4b3fb27972d73d9954e, type: 3}
       propertyPath: m_LocalPosition.y
@@ -2391,15 +2412,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1475858915739514588, guid: 72641fc5610af4b3fb27972d73d9954e, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 1475858915739514588, guid: 72641fc5610af4b3fb27972d73d9954e, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 1475858915739514588, guid: 72641fc5610af4b3fb27972d73d9954e, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 1475858915739514588, guid: 72641fc5610af4b3fb27972d73d9954e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -2419,7 +2440,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2247469326230580326, guid: 72641fc5610af4b3fb27972d73d9954e, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 72641fc5610af4b3fb27972d73d9954e, type: 3}
