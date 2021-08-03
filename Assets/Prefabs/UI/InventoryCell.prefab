@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 1244462875114216944}
   - component: {fileID: 884009622425755670}
   m_Layer: 5
-  m_Name: Ingredient
+  m_Name: Icon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -85,8 +85,9 @@ GameObject:
   m_Component:
   - component: {fileID: 7151712744218457305}
   - component: {fileID: 6193630011199471264}
+  - component: {fileID: 2821007421804177920}
   m_Layer: 5
-  m_Name: IngredientCell
+  m_Name: InventoryCell
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -121,6 +122,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3459453310945799477}
   m_CullTransparentMesh: 1
+--- !u!114 &2821007421804177920
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3459453310945799477}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59483c2945a8422c9d597185a3468524, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cellIcon: {fileID: 884009622425755670}
 --- !u!1 &6487560868158001936
 GameObject:
   m_ObjectHideFlags: 0
