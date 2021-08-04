@@ -7,7 +7,6 @@ namespace FOUOne.PotionCreator
     [CreateAssetMenu(fileName = "potion", menuName = "PotionCreator/Create Potion", order = 0)]
     public class Potion : Item
     {
-        public GameObject potionPrefab;
         public Color sideColor;
         public Color topColor;
         public List<Ingredient> recipe = new List<Ingredient>();
