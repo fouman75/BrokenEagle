@@ -15,4 +15,4 @@ Can be downloaded from [Asset Store](https://api.unity.com/v1/oauth2/authorize?c
 ## Ingredients
 <img src="./Assets/Images/Rexard/Ingredients/122_b.png" alt="drawing" width="200"/>
 
-![test](./Assets/Images/Rexard/Ingredients/122_b.png | width=48)
+![test](./Assets/Images/Rexard/Ingredients/122_b.png)
