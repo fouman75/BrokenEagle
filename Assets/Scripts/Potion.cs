@@ -16,8 +16,8 @@ namespace FOUOne.PotionCreator
 
         private void Awake()
         {
-            Debug.Log($"{name} is awake");
             Hash = GetRecipeHash();
+            Debug.Log($"{name} is awake with hash [{Hash}]");
         }
 
         private int GetRecipeHash()
