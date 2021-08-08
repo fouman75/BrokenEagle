@@ -1,5 +1,5 @@
 # BrokenEagle
-Unity programming Theory repo
+Potion creator demo for the `Unity programming Theory repo`
 
 # Assets
 

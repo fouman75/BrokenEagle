@@ -18,7 +18,7 @@ MonoBehaviour:
   sideColor: {r: 0.3962264, g: 0.026053283, b: 0, a: 0}
   topColor: {r: 0.972549, g: 0, b: 0.009154376, a: 0}
   recipe:
-  - {fileID: 11400000, guid: e39debcaa7f2f4131af96272c8f42e5a, type: 2}
   - {fileID: 11400000, guid: 5923f140c90204c8486c707204633d41, type: 2}
   - {fileID: 11400000, guid: 86f69877db9bc41bdabfad1e14b196bb, type: 2}
+  - {fileID: 11400000, guid: 57832b39a45b743c98be5b233cbf9e6b, type: 2}
   effect: {fileID: 11400000, guid: 688b3aee5d0cf4057abace097a447fda, type: 2}

@@ -15,5 +15,7 @@ namespace FOUOne.PotionCreator
             _items.Add(item);
             ItemAdded?.Invoke(item);
         }
+
+        public Item GetItem(int index) => _items[index];
     }
 }

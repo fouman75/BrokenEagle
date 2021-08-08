@@ -8,9 +8,11 @@ namespace FOUOne.PotionCreator
     public class GameManager : MMSingleton<GameManager>
     {
         [SerializeField] private InventoryManager inventoryManager;
+        [SerializeField] private MixerManager mixerManager;
         [SerializeField] private List<Ingredient> ingredients;
         
         public InventoryManager Inventory => inventoryManager;
+        public MixerManager Mixer => mixerManager;
 
         private void Start()
         {
@@ -23,11 +25,6 @@ namespace FOUOne.PotionCreator
             {
                 inventoryManager.AddItem(ingredient);
             }
-        }
-
-        public void HandleIngredientClicked()
-        {
-            Debug.Log("Ingredient clicked");
         }
     }
 }

@@ -2,7 +2,7 @@ using UnityEngine;
 
 namespace FOUOne.PotionCreator
 {
-    public class UIManager : MonoBehaviour
+    public class InventoryUIManager : MonoBehaviour
     {
         [SerializeField] private Transform inventoryContainer;
         [SerializeField] private GameObject inventoryCell;
@@ -21,6 +21,7 @@ namespace FOUOne.PotionCreator
         {
             Debug.Log($"AddItem received by UI: {item.name}");
             var cell = Instantiate(inventoryCell, inventoryContainer);
+            cell.name = item.name;
             cell.GetComponent<InventoryCellController>().SetIcon(item.icon);
         }
     }
