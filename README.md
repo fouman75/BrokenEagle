@@ -14,3 +14,6 @@ Can be downloaded from [Asset Store](https://api.unity.com/v1/oauth2/authorize?c
 
 ## Ingredients
 <img src="Docs/PotionList.png" alt="Potion List" width="600"/>
+
+## Demo
+[Demo](https://streamable.com/q60k2w)
