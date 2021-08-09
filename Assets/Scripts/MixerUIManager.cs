@@ -17,7 +17,7 @@ namespace FOUOne.PotionCreator
             MixerManager.ItemChanged -= HandleItemChanged;
         }
 
-        private void HandleItemChanged(List<int> items)
+        private void HandleItemChanged(List<Item> items)
         {
             Debug.Log("Mixer Manager Item Changed");
             for (var i = 0; i < itemCells.Count; i++)
@@ -25,7 +25,7 @@ namespace FOUOne.PotionCreator
                 Sprite icon = null;
                 if (i < items.Count)
                 {
-                    icon = GameManager.Instance.Inventory.GetItem(items[i]).icon;
+                    icon = items[i].icon;
                 }
                 itemCells[i].SetIcon(icon);
             }

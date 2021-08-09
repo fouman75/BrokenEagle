@@ -10,6 +10,8 @@ namespace FOUOne.PotionCreator
         private static readonly int SideColor = Shader.PropertyToID("_SideColor");
         private static readonly int TopColor = Shader.PropertyToID("_TopColor");
 
+        public Potion Potion => potionData;
+        
         private void Start()
         {
             var mat = liquid.GetComponent<Renderer>().material;

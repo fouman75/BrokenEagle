@@ -6,11 +6,20 @@ namespace FOUOne.PotionCreator
 {
     public class MixerManager : MonoBehaviour
     {
-        public static Action<List<int>> ItemChanged; 
+        public static Action<List<Item>> ItemChanged; 
+        public int MixIngredients()
+        {
+            var recipeHash = Potion.GetRecipeHash(_items);
+            _items.Clear();
+            ItemChanged.Invoke(_items);
+
+            return recipeHash;
+        }
         
         [SerializeField] private int maxItems = 3;
+        [SerializeField] private CauldronController cauldron;
         
-        private readonly List<int> _items = new List<int>();
+        private readonly List<Item> _items = new List<Item>();
 
         private void OnEnable()
         {
@@ -25,9 +34,15 @@ namespace FOUOne.PotionCreator
         private void HandleItemClicked(int index)
         {
             if (_items.Count >= maxItems) return;
+            
             Debug.Log($"Adding item {index} to mix");
-            _items.Add(index);
+            _items.Add(GameManager.Instance.Inventory.GetItem(index));
             ItemChanged?.Invoke(_items);
+
+            if (_items.Count == maxItems)
+            {
+                cauldron.SetReady();
+            }
         }
     }
 }
