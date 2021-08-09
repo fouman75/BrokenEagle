@@ -32,6 +32,8 @@ namespace FOUOne.PotionCreator
                 Destroy(_currentPotion);
                 _currentPotion = null;
             }
+            
+            potionContainer.transform.rotation = Quaternion.identity;
 
             var recipeHash = Mixer.MixIngredients();
             var potion = potions.Find(p => p.Potion.Hash == recipeHash);
