@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e7ae62c35ab4a148a3c72a7ccf9c409, type: 3}
+  m_Name: Flask of Curing
+  m_EditorClassIdentifier: 
+  id: CURING
+  description: 
+  potionPrefab: {fileID: 0}
+  sideColor: {r: 0.07586351, g: 0.6132076, b: 0, a: 0}
+  topColor: {r: 0, g: 0.972549, b: 0, a: 0}
+  recipe:
+  - {fileID: 11400000, guid: 56c90c4ca74624be19335784a6fe3b24, type: 2}
+  - {fileID: 11400000, guid: 5923f140c90204c8486c707204633d41, type: 2}
+  - {fileID: 11400000, guid: 3df39fc4b07c741108391203258ed41d, type: 2}
+  effect: {fileID: 11400000, guid: 688b3aee5d0cf4057abace097a447fda, type: 2}
