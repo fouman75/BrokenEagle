@@ -64,6 +64,7 @@ sysinfo.txt
 # Crashlytics generated file
 crashlytics-build.properties
 
+# Copyrights assets
 Rexard.meta
 Assets/Images/Rexard
 Plugins.meta
@@ -73,3 +74,7 @@ Assets/ThirdParty/Feel
 Feel.meta
 JMO Assets.meta
 Assets/ThirdParty/JMO Assets
+
+# Custom HTML
+WebGLTemplates.meta
+Assets/WebGLTemplates

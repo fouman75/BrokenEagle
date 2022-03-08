@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: HELLE
   description: 
-  icon: {fileID: 21300000, guid: 12b6ab0cc6d41474595af469fcdcb719, type: 3}
+  icon: {fileID: 21300000, guid: ad61868d7da2a434183678b961ccef5a, type: 3}

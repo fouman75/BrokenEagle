@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: USPAL
   description: 
-  icon: {fileID: 21300000, guid: 0cd40aca4015148f8b47a569bacb1782, type: 3}
+  icon: {fileID: 21300000, guid: 96a4d98b7ed894562b58b85617855172, type: 3}

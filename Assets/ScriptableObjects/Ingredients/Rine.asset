@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: RINE
   description: 
-  icon: {fileID: 21300000, guid: 72f757971fb1441dc8038b63d424bb92, type: 3}
+  icon: {fileID: 21300000, guid: c77f7d1f755354e57a7e134ba14a3506, type: 3}

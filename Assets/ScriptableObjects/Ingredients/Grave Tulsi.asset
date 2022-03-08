@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: TULSI
   description: 
-  icon: {fileID: 21300000, guid: 91c83afd5869745fea98fe0db14a204a, type: 3}
+  icon: {fileID: 21300000, guid: d9244b736593c4af8a2177866bfd20aa, type: 3}

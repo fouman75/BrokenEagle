@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: NRASP
   description: 
-  icon: {fileID: 21300000, guid: b07a4ad0539e94ecb9a3dc392b452ef0, type: 3}
+  icon: {fileID: 21300000, guid: 8a622b8cc974f471c8f12ec7751f75b9, type: 3}
